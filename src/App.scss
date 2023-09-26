@@ -1,0 +1,114 @@
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  max-width: 400px;
+}
+
+.text-main {
+  > span {
+    color: #00a2ff;
+  }
+}
+
+.password-generator-card {
+  border: 4px solid #00a2ff;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-shadow: 0 0 15px 10px rgba(0,162,255,0.2);
+}
+
+.input-group-password {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.input-password-container {
+  position: relative;
+}
+
+.input-password {
+  width: 100%;
+  font-size: 1.6em;
+  background: #fff;
+  color: #1b1c3b;
+  padding: 4px 0 4px 8px;
+}
+
+.icon-copy {
+}
+
+.btn-copy {
+  background: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+
+  &:hover {
+    border: none;
+  }
+}
+
+.hint {
+  height: 16px;
+  font-size: 1em;
+  text-align: end;
+  color: #00a2ff;
+  font-weight: 500;
+}
+
+.input-group-range {
+  display: flex;
+  flex-direction: column;
+
+  > label {
+    font-size: 1.1em;
+  }
+}
+
+.input-group-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4px;
+
+  > label {
+    font-size: 1.1em;
+  }
+
+  > input{
+    height: 16px;
+    width: 16px;
+  }
+}
+
+.btn-generate {
+  width: 100%;
+  margin-top: 12px;
+  padding: 0.8em 1.2em;
+  border: 2px solid #e3d500;
+  border-radius: 30px;
+  background: #fbe30c;
+  color: #202730;
+  transition: background-color .3s ease-in-out,border-color .3s ease-in-out;
+  cursor: pointer;
+  font-size: 1.2em;
+
+  &:hover {
+    background-color: #38a2ff;
+    border-color: #2c85d5;
+    color: #fff;
+  }
+}
